@@ -15,12 +15,15 @@ const Header = () => {
       }
     }
     window.addEventListener("scroll", hanlleScroll);
-    return () => window.addEventListener("scroll", hanlleScroll);
   }, []);
 
   return (
     <div className="relative">
-      <div className={`smallscreendisplay hidden w-[100%] p-[10px]  top-0 z-[50] fixed transition-all duration-300  items-center justify-between ${scroll?"bg-[#0b0b14] shadow-lg":"bg-[]"}`}>
+      <div
+        className={`smallscreendisplay hidden w-[100%] p-[10px]  top-0 z-[50] fixed transition-all duration-300  items-center justify-between ${
+          scroll ? "bg-[#0b0b14] shadow-lg" : "bg-[]"
+        }`}
+      >
         <div className="w-[35%]  cursor-pointer hidden mobilelogo">
           <a href="home.html">
             <img src={Logo} alt="logo" />
@@ -78,7 +81,8 @@ const Header = () => {
       </div>
 
       {menu && (
-        <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh] mt-[50px]  z-[4000] flex">
+        <div className="relative">
+        <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh] mt-[50px] top-0  fixed   z-[4000] flex">
           <div className="w-[100%]">
             <div className="w-[100%] h-[100px] mt-[20px] ">
               <button onClick={() => setMenu(false)} className=" float-right">
@@ -130,6 +134,7 @@ const Header = () => {
               </div>
             </ul>
           </div>
+        </div>
         </div>
       )}
     </div>
