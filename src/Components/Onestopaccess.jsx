@@ -17,6 +17,7 @@ const Onestopaccess = () => {
           </h3>
           <div className="flex justify-between downloadbuttons">
             <Button props="Launch dApp" className=" downloadbuttonsbutton" />
+
             <Button
               props="Download on Appstore"
               className="bg-[transparent]  border border-[1px solid white] downloadbuttonsbutton2"
@@ -53,26 +54,33 @@ const Onestopaccess = () => {
         </div>
       </div>
       <div className="flex onetospacefigureholder justify-center items-center">
-  <div className="w-[80%]  bg-[#0b0b14] pricedata flex justify-between items-center p-[30px]    rounded-[25px] border border-white">
-    <div className="text-center">
-      <h2 className="text-[40px] font-semibold text-white pricedatafigures">3.2M+</h2>
-      <h3 className="text-[#fff9]">Liquidity sources</h3>
-    </div>
-    <div className="text-center">
-      <h2 className="text-[40px] font-semibold text-white pricedatafigures">$695B+</h2>
-      <h3 className="text-[#fff9]">Total volume</h3>
-    </div>
-    <div className="text-center">
-      <h2 className="text-[40px] font-semibold text-white pricedatafigures">24.1M+</h2>
-      <h3 className="text-[#fff9]">Users</h3>
-    </div>
-    <div className="text-center">
-      <h2 className="text-[40px] font-semibold text-white pricedatafigures">189M+</h2>
-      <h3 className="text-[#fff9]">Trades</h3>
-    </div>
-  </div>
-</div>
-
+        <div className="w-[80%]  bg-[#0b0b14] pricedata flex justify-between items-center p-[30px]    rounded-[25px] border border-white">
+          <div className="text-center">
+            <h2 className="text-[40px] font-semibold text-white pricedatafigures">
+              3.2M+
+            </h2>
+            <h3 className="text-[#fff9]">Liquidity sources</h3>
+          </div>
+          <div className="text-center">
+            <h2 className="text-[40px] font-semibold text-white pricedatafigures">
+              $695B+
+            </h2>
+            <h3 className="text-[#fff9]">Total volume</h3>
+          </div>
+          <div className="text-center">
+            <h2 className="text-[40px] font-semibold text-white pricedatafigures">
+              24.1M+
+            </h2>
+            <h3 className="text-[#fff9]">Users</h3>
+          </div>
+          <div className="text-center">
+            <h2 className="text-[40px] font-semibold text-white pricedatafigures">
+              189M+
+            </h2>
+            <h3 className="text-[#fff9]">Trades</h3>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

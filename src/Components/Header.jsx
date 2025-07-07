@@ -8,6 +8,19 @@ const Header = () => {
 
   return (
     <div>
+      <div className="smallscreendisplay hidden w-[100%] p-[10px]   items-center justify-between ">
+        <div className="w-[35%]  cursor-pointer hidden mobilelogo">
+          <img src={Logo} alt="logo" />
+        </div>
+        <div className="menu w-[100%] p-[10px] hidden  cursor-pointer ">
+          <button
+            className="float-right   mr-[10px]"
+            onClick={() => setMenu(true)}
+          >
+            <i className="fas fa-bars fa-1x text-[white] "></i>
+          </button>
+        </div>
+      </div>
       <div className=" desktop header flex justify-between items-center pt-[20px] h-[70px] sticky z-[2000]">
         <div className="w-[15%] logo cursor-pointer">
           <img src={Logo} alt="logo" />
@@ -47,20 +60,13 @@ const Header = () => {
           <Button props="Launch dApp" />
         </div>
       </div>
-      <div className="menu w-[100%] p-[10px] hidden  cursor-pointer ">
-        <button
-          className="float-right mt-[15px]  mr-[10px]"
-          onClick={() => setMenu(true)}
-        >
-          <i className="fas fa-bars fa-1x text-[white] "></i>
-        </button>
-      </div>
+
       {menu && (
-        <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh] mt-[-50px]  z-[4000] flex">
+        <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh] mt-[-40px]  z-[4000] flex">
           <div className="w-[100%]">
             <div className="w-[100%] h-[100px] mt-[20px] ">
               <button onClick={() => setMenu(false)} className=" float-right">
-                <i className=" fas fa-times text-[white] text-[25px] mt-[15px] mr-[-15px]"></i>
+                <i className=" fas fa-times text-[white] text-[25px] mt-[20px] mr-[20px]"></i>
               </button>
             </div>
             <ul className="text-[18px] text-[white] mt-[-30px]">
