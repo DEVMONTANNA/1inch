@@ -1,0 +1,87 @@
+@media (max-width: 600px) {
+  .header {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .onestopaccess {
+    padding: 0;
+  }
+  .onestopaccessholder {
+    display: block;
+    margin-top: 200px;
+    padding-left: 10px;
+  }
+  .onestopaccesstexts {
+    font-size: 36px;
+  }
+  .onestopaccesstexts2 {
+    font-size: 32px;
+  }
+  .vv {
+    color: white;
+  }
+  .icons {
+    display: none;
+    width: 100%;
+    /* justify-content: space-around; */
+  }
+  .downloadbuttons {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .downloadbuttonsbutton {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 17px;
+  }
+  .downloadbuttonsbutton2 {
+    background-color: #06070a;
+    border: 2px solid white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 17px;
+  }
+  .mobile-header {
+    display: block;
+  }
+  .pricedata {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
+    padding: 20px;
+  }
+.onetospacefigureholder{
+  margin-top: -200px;
+}
+  .pricedatafigures {
+    font-size: 30px;
+    font-weight: 450;
+  }
+  .optimizeyourtradetext{
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .header {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .onestopaccess {
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+}
