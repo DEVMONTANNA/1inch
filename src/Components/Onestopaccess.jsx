@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Onestopaccess = () => {
   return (
-    <div className="z-[3000]">
+    <div className="z-[3000]  mt-[-100px] pt-[70px]">
       <div className="w-[100%] h-[600px] mt-[20px] onestopaccessholder  flex justify-between items-center ">
         <div className="p-[50px]   onestopaccess">
           <h1 className="text-[80px] onestopaccesstexts font-bold text-[white]">
@@ -16,8 +16,11 @@ const Onestopaccess = () => {
             to decentralized finance
           </h3>
           <div className="flex justify-between downloadbuttons">
-            <Button props="Launch dApp" className=" downloadbuttonsbutton" />
-
+         
+             
+              <Button props="Launch dApp" className=" downloadbuttonsbutton" />
+            
+            
             <Button
               props="Download on Appstore"
               className="bg-[transparent]  border border-[1px solid white] downloadbuttonsbutton2"

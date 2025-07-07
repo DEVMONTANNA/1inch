@@ -1,18 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./Images/logo.png";
 import Button from "./Button";
 
 const Header = () => {
-  const [headState, setHeaderState] = useState(false);
+  const [scroll, setScrolled] = useState(false);
   const [menu, setMenu] = useState(false);
 
+  useEffect(() => {
+    function hanlleScroll() {
+      if (window.scrollY > 30) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    }
+    window.addEventListener("scroll", hanlleScroll);
+    return () => window.addEventListener("scroll", hanlleScroll);
+  }, []);
+
   return (
-    <div>
-      <div className="smallscreendisplay hidden w-[100%] p-[10px]   items-center justify-between ">
+    <div className="relative">
+      <div className={`smallscreendisplay hidden w-[100%] p-[10px]  top-0 z-[50] fixed transition-all duration-300  items-center justify-between ${scroll?"bg-[#0b0b14] shadow-lg":"bg-[]"}`}>
         <div className="w-[35%]  cursor-pointer hidden mobilelogo">
-          <img src={Logo} alt="logo" />
+          <a href="home.html">
+            <img src={Logo} alt="logo" />
+          </a>
         </div>
-        <div className="menu w-[100%] p-[10px] hidden  cursor-pointer ">
+        <div className="menu w-[100%]  p-[10px] hidden  cursor-pointer ">
           <button
             className="float-right   mr-[10px]"
             onClick={() => setMenu(true)}
@@ -23,7 +37,9 @@ const Header = () => {
       </div>
       <div className=" desktop header flex justify-between items-center pt-[20px] h-[70px] sticky z-[2000]">
         <div className="w-[15%] logo cursor-pointer">
-          <img src={Logo} alt="logo" />
+          <a href="home.html">
+            <img src={Logo} alt="logo" />
+          </a>
         </div>
         <div>
           <ul className="flex text-[#fff9] text-[18px] ">
@@ -62,7 +78,7 @@ const Header = () => {
       </div>
 
       {menu && (
-        <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh] mt-[-40px]  z-[4000] flex">
+        <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh] mt-[50px]  z-[4000] flex">
           <div className="w-[100%]">
             <div className="w-[100%] h-[100px] mt-[20px] ">
               <button onClick={() => setMenu(false)} className=" float-right">
