@@ -1,12 +1,52 @@
-# React + Vite
+# 🔁 1inch Website Re-creation (Clone)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive, pixel-perfect re-creation of the official [1inch](https://1inch.io/) landing page using **React**, **TailwindCSS**, and **Font Awesome**.
 
-Currently, two official plugins are available:
+## ✨ Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [View Project Live](https://1inch-devmontannas-projects.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- ⚡ Fully responsive design
+- 🎨 TailwindCSS for fast styling
+- 🌍 Font Awesome icons (Telegram, Discord, facebook etc.)
+- 🖼️ Hero section with full-width background image
+- 🔥 Mobile hamburger menu and drawer
+- 💻 Clean component structure in React
+- 📱 Flexbox/Grid used for responsive layout sections
+
+---
+
+
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Vanilla  css (for responsiveness)**
+- **Tailwind CSS**
+- **Font Awesome**
+- **JavaScript**
+
+
+---
+
+## 📁 Folder Structure
+
+```bash
+src/
+├── assets/         
+├── components/      # Reusable React components
+|  - Images         # Images and icons
+│   ├── Header.jsx
+│   ├── Button.jsx
+│   ├── Home.jsx
+|   |   Onetospace.jsx
+|   |   OptimizeYourTrade.jsx
+│   └── ...
+|   App.css
+├── App.jsx
+├── main.jsx
+└── index.css      
