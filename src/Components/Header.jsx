@@ -5,6 +5,7 @@ import Button from "./Button";
 const Header = () => {
   const [scroll, setScrolled] = useState(false);
   const [menu, setMenu] = useState(false);
+  const [hover, setHover] = useState(false);
 
   useEffect(() => {
     function hanlleScroll() {
@@ -46,9 +47,18 @@ const Header = () => {
         </div>
         <div>
           <ul className="flex text-[#fff9] text-[18px] ">
-            <div className="flex items-center mr-[24px] cursor-pointer hover:text-white">
+            <div
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
+              className="flex  relative items-center mr-[24px] cursor-pointer hover:text-white"
+            >
               <ol className="mr-2">Products</ol>
               <i class="fas fa-angle-down text-[13px]"></i>
+              {hover && (
+                <div className=" absolute bg-red-600 z-50 w-[40vw] mt-[15px] -left-50 top-full h-[130px] p-[10px] rounded-[25px]">
+                  Hover desktop is active
+                </div>
+              )}
             </div>
 
             <div className="flex items-center mr-[24px] cursor-pointer hover:text-white">
@@ -82,59 +92,69 @@ const Header = () => {
 
       {menu && (
         <div className="relative">
-        <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh] mt-[50px] top-0  fixed   z-[4000] flex">
-          <div className="w-[100%]">
-            <div className="w-[100%] h-[100px] mt-[20px] ">
-              <button onClick={() => setMenu(false)} className=" float-right">
-                <i className=" fas fa-times text-[white] text-[25px] mt-[20px] mr-[20px]"></i>
-              </button>
+          <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh] mt-[50px] top-0  fixed   z-[4000] flex">
+            <div className="w-[100%]">
+              <div className="w-[100%] bg-[red] h-[50px] mt-[20px] ">
+                <button onClick={() => setMenu(false)} className=" float-right">
+                  <i className=" fas fa-times text-[white] text-[25px] mt-[20px] mr-[20px]"></i>
+                </button>
+              </div>
+              <ul className="text-[18px] text-[white] mt-[-20px]">
+                <div
+                  onMouseEnter={() => setHover(true)}
+                  onMouseLeave={() => setHover(false)}
+                  className="flex h-[60px] justify-between items-center mr-[24px] m-[10px] cursor-pointer hover:text-white"
+                >
+                  <p className="mr-2">Products</p>
+                  <i className="fas fa-angle-down text-sm text-[13px]  bg-[red]"></i>
+                </div>
+                {hover && (
+                  <div className="bg-red-600 h-[60px] z-[100]">
+                    Hover is active
+                  </div>
+                )}
+
+                <div className="pl-[10px] pr-[10px]">
+                  <hr />
+                </div>
+                <div className="flex  h-[30px] justify-between items-center mr-[24px] m-[10px] mb-[20px] cursor-pointer hover:text-white">
+                  <ol className="mr-2">Developers</ol>
+                  <i class="fas fa-angle-down text-[13px]"></i>
+                </div>
+                <div className="pl-[10px] pr-[10px]">
+                  <hr />
+                </div>
+                <div className="flex  justify-between items-center mr-[24px] m-[10px] mb-[24px] cursor-pointer hover:text-white">
+                  <ol className="mr-2">About</ol>
+                  <i class="fas fa-angle-down text-[13px]"></i>
+                </div>
+                <div className="pl-[10px] pr-[10px]">
+                  <hr />
+                </div>
+                <div className="flex justify-between items-center mr-[24px] m-[10px]  mb-[20px] cursor-pointer hover:text-white">
+                  <ol className="mr-2">Community</ol>
+                  <i class="fas fa-angle-down text-[13px]"></i>
+                </div>
+                <div className="pl-[10px] pr-[10px]">
+                  <hr />
+                </div>
+                <div className="flex justify-between items-center mr-[24px] m-[10px] mb-[20px]  cursor-pointer hover:text-white">
+                  <ol className="mr-2">Blogs</ol>
+                  <i class="fas fa-angle-down text-[13px]"></i>
+                </div>
+                <div className="pl-[10px] pr-[10px]">
+                  <hr />
+                </div>
+                <div className="flex justify-between items-center mr-[24px] m-[10px]  cursor-pointer hover:text-white">
+                  <ol className="mr-2">Language</ol>
+                  <i class="fas fa-angle-down text-[13px]"></i>
+                </div>
+                <div className="pl-[8px] pr-[8px] mt-[35px]">
+                  <Button props="Launch dApp" className="w-[100%] h-[60px] " />
+                </div>
+              </ul>
             </div>
-            <ul className="text-[18px] text-[white] mt-[-30px]">
-              <div className="flex justify-between items-center mr-[24px] m-[10px] cursor-pointer hover:text-white">
-                <ol className="mr-2">Products</ol>
-                <i class="fas fa-angle-down text-[13px]"></i>
-              </div>
-              <div className="pl-[10px] pr-[10px]">
-                <hr />
-              </div>
-              <div className="flex h-[60px] justify-between items-center mr-[24px] m-[10px] cursor-pointer hover:text-white">
-                <ol className="mr-2">Developers</ol>
-                <i class="fas fa-angle-down text-[13px]"></i>
-              </div>
-              <div className="pl-[10px] pr-[10px]">
-                <hr />
-              </div>
-              <div className="flex justify-between items-center mr-[24px] m-[10px] mb-[20px] cursor-pointer hover:text-white">
-                <ol className="mr-2">About</ol>
-                <i class="fas fa-angle-down text-[13px]"></i>
-              </div>
-              <div className="pl-[10px] pr-[10px]">
-                <hr />
-              </div>
-              <div className="flex justify-between items-center mr-[24px] m-[10px] mb-[20px] cursor-pointer hover:text-white">
-                <ol className="mr-2">Community</ol>
-                <i class="fas fa-angle-down text-[13px]"></i>
-              </div>
-              <div className="pl-[10px] pr-[10px]">
-                <hr />
-              </div>
-              <div className="flex justify-between items-center mr-[24px] m-[10px] mb-[20px]  cursor-pointer hover:text-white">
-                <ol className="mr-2">Blogs</ol>
-                <i class="fas fa-angle-down text-[13px]"></i>
-              </div>
-              <div className="pl-[10px] pr-[10px]">
-                <hr />
-              </div>
-              <div className="flex justify-between items-center mr-[24px] m-[10px]  cursor-pointer hover:text-white">
-                <ol className="mr-2">Language</ol>
-                <i class="fas fa-angle-down text-[13px]"></i>
-              </div>
-              <div className="pl-[8px] pr-[8px] mt-[35px]">
-                <Button props="Launch dApp" className="w-[100%] h-[60px] " />
-              </div>
-            </ul>
           </div>
-        </div>
         </div>
       )}
     </div>
