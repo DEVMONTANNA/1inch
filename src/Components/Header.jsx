@@ -106,10 +106,10 @@ const Header = () => {
                   className="flex h-[60px] justify-between items-center mr-[24px] m-[10px] cursor-pointer hover:text-white"
                 >
                   <p className="mr-2">Products</p>
-                  <i className="fas fa-angle-down text-sm text-[13px]  bg-[red]"></i>
+                  <i className="fas fa-angle-down text-sm text-[13px]  "></i>
                 </div>
                 {hover && (
-                  <div className="bg-red-600 h-[60px] z-[100]">
+                  <div className=" h-[60px] z-[100]">
                     Hover is active
                   </div>
                 )}
