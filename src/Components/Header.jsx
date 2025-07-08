@@ -94,7 +94,7 @@ const Header = () => {
         <div className="relative">
           <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh] mt-[50px] top-0  fixed   z-[4000] flex">
             <div className="w-[100%]">
-              <div className="w-[100%] bg-[red] h-[50px] mt-[20px] ">
+              <div className="w-[100%] h-[50px] mt-[20px] ">
                 <button onClick={() => setMenu(false)} className=" float-right">
                   <i className=" fas fa-times text-[white] text-[25px] mt-[20px] mr-[20px]"></i>
                 </button>
