@@ -109,7 +109,7 @@ const Header = () => {
                   <i className="fas fa-angle-down text-sm text-[13px]  "></i>
                 </div>
                 {hover && (
-                  <div className=" h-[60px] z-[100]">
+                  <div className="bg-red-600 h-[60px] z-[100]">
                     Hover is active
                   </div>
                 )}
