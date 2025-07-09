@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import Logo from "./Images/logo.png";
 import Button from "./Button";
 import Fusion from "./Images/fusion.png";
+import Card from "./Images/card.svg";
+import Swap from "./Images/swapping.svg";
+import Wallet from "./Images/wallet.svg";
+import Portfolio from "./Images/portfolio.svg";
+import Hunter from "./Images/hunter.svg";
 
 const Header = () => {
   const [scroll, setScrolled] = useState(false);
@@ -64,59 +69,99 @@ const Header = () => {
                 >
                   <div className="productchild1  w-[40%] p-[15px]">
                     <b>
-                      <h1 className="text-[verdana]">APPS</h1>
+                      <h1 className="text-[verdana] ml-[15px]">APPS</h1>
                     </b>
-                    <div className="mt-[30px] mb-[50px]">
-                      <div className="flex flex-col leading-tight mt-[17px]">
-                        <b>
-                          <p>SWAP</p>
-                        </b>
-                        <p className="text-[15px]">
-                          Swap any token at the best rates
-                        </p>
+                    <div className="">
+                      <div className="  flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
+                        <div>
+                          <img
+                            className="flex rounded-[22px] bg-[black] p-[8px] items-center justify-center"
+                            src={Swap}
+                          />
+                        </div>
+                        <div className="ml-[10px] ">
+                          <b>
+                            <p>Swap</p>
+                          </b>
+                          <p className="text-[12.5px] flex items-center">
+                            Swap any token at he best rates
+                          </p>
+                        </div>
                       </div>
-                      <div className="flex flex-col leading-tight mt-[17px]">
-                        <b>
-                          <p>WALLET</p>
-                        </b>
-                        <p className="text-[15px]">
-                          Access Web3 with your phone
-                        </p>
+                      <div className="  flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
+                        <div>
+                          <img
+                            className="flex rounded-[22px] bg-[black] p-[8px] items-center justify-center"
+                            src={Wallet}
+                          />
+                        </div>
+                        <div className="ml-[10px]">
+                          <b>
+                            <p>WALLET</p>
+                          </b>
+                          <p className="text-[13px]">
+                            Access Web3 with your phone
+                          </p>
+                        </div>
                       </div>
-                      <div className="flex flex-col leading-tight mt-[17px]">
-                        <b>
-                          <p>PORTFOLIO</p>
-                        </b>
-                        <p className="text-[15px]">
-                          Track your assets' performance
-                        </p>
+                      <div className="flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
+                        <div>
+                          <img
+                            className="flex rounded-[22px] bg-[black] p-[8px] items-center justify-center"
+                            src={Portfolio}
+                          />
+                        </div>
+                        <div className="ml-[10px]">
+                          <b>
+                            <p>PORTFOLIO</p>
+                          </b>
+                          <p className="text-[13px]">
+                            Track your assets' performance
+                          </p>
+                        </div>
                       </div>
                     </div>
-                    <div className="mt-[30px]">
+                    <div>
                       <div className="mt-[30px]">
                         <b>
-                          <h1>OTHERS</h1>
+                          <h1 className="ml-[20px]">OTHERS</h1>
                         </b>
                       </div>
-                      <div className="flex flex-col leading-tight mt-[27px]">
-                        <b>
-                          <p>FUSION+</p>
-                        </b>
-                        <p className="text-[15px]">
-                          Enjoy gasless cross-chain swaps and MEV protection
-                        </p>
+                      <div className="flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
+                        <div>
+                          <img
+                            className="flex rounded-[22px] bg-[black] p-[8px] items-center justify-center"
+                            src={Portfolio}
+                          />
+                        </div>
+                        <div className="ml-[10px]">
+                          <b>
+                            <p>PORTFOLIO</p>
+                          </b>
+                          <p className="text-[13px]">
+                            Track your assets' performance
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="productchild1  w-[40%] p-[15px]">
                     <b>
-                      <h1 className="text-[verdana]">PHYSICAL</h1>
+                      <h1 className="text-[verdana] ml-[10px]">PHYSICAL</h1>
                     </b>
-                    <div className="flex flex-col leading-tight mt-[17px]">
-                      <b>
-                        <p>CARD</p>
-                      </b>
-                      <p className="text-[15px]">Pay with crypto anywhere</p>
+                    <div className="flex  leading-tight mt-[17px] hover:bg-[black] pl-[10px] p-[15px] rounded-[25px]">
+                      <div>
+                        <img
+                          className="flex bg-[black] p-[8px] rounded-[22px] items-center justify-center"
+                          src={Card}
+                        />
+                      </div>
+                      <div className="ml-[10px] ">
+                        <b>
+                          <p>CARD</p>
+                        </b>
+                        <p className="text-[13px]">Pay with crypto anywhere</p>
+                      </div>
                     </div>
                   </div>
                   <div className=" w-[40%] p-[15px]">
@@ -125,13 +170,13 @@ const Header = () => {
                     </div>
                     <div className="mt-[15px]">
                       <b>Cross chain swaps are here!</b>
-                      <p className="text-[16px]">
+                      <p className="text-[13px] font-robotoSerif ">
                         seamless, secure and self-custodial, all at once
                       </p>
                     </div>
                     <div className="mt-[20px]">
                       <Button
-                        className=" pl-[10px]  pr-[10px] bg-[transparent] border border-[2px solid white] "
+                        className="   hover:bg-[rgba(155,182,182,0.06)] pl-[10px] p-[15px] rounded-[25px] pr-[10px] bg-[transparent] border border-[2px solid white] "
                         props="Learn more"
                       />
                     </div>
@@ -142,7 +187,7 @@ const Header = () => {
 
             <div
               onMouseEnter={() => setDeveloperScroll(true)}
-              onMouseLeave={() => setDeveloperScroll(false)}
+              // onMouseLeave={() => setDeveloperScroll(false)}
               className="flex items-center mr-[24px] cursor-pointer hover:text-white"
             >
               <ol className="mr-2">Developers</ol>
@@ -150,80 +195,89 @@ const Header = () => {
               {developerScroll && (
                 <div
                   onMouseLeave={() => setDeveloperScroll(false)}
-                  className=" absolute bg-[#0b0b14] z-50 w-[65vw] mt-[15px]  flex justify-between  left-56 top-full  p-[20px] rounded-[25px]"
+                  className=" absolute bg-[#0b0b14]  z-50 w-[43vw] mt-[15px]  grid grid-rows-3 -left-[-250px] top-full pt-[15px]  p-[10px] rounded-[25px]"
                 >
-                  <div className="productchild1  w-[40%] p-[15px]">
+                  <div className="row-span-1 ">
                     <b>
-                      <h1 className="text-[verdana]">APPS</h1>
+                      <p className="ml-[18px] text-[22px]">Devlopers</p>
                     </b>
-                    <div className="mt-[30px] mb-[50px]">
-                      <div className="flex flex-col leading-tight mt-[17px]">
-                        <b>
-                          <p>SWAP</p>
-                        </b>
-                        <p className="text-[15px]">
-                          Swap any token at the best rates
-                        </p>
+                    <div className="  flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
+                      <div>
+                        <img
+                          className="flex rounded-[18px] bg-[black] p-[12px] items-center justify-center"
+                          src={Swap}
+                        />
                       </div>
-                      <div className="flex flex-col leading-tight mt-[17px]">
+                      <div className="ml-[10px]  ">
                         <b>
-                          <p>WALLET</p>
+                          <p className="flex items-center mt-[5px]">
+                            Developer portal
+                          </p>
                         </b>
-                        <p className="text-[15px]">
-                          Access Web3 with your phone
-                        </p>
-                      </div>
-                      <div className="flex flex-col leading-tight mt-[17px]">
-                        <b>
-                          <p>PORTFOLIO</p>
-                        </b>
-                        <p className="text-[15px]">
-                          Track your assets' performance
+                        <p className="text-[12.5px] mt-[5px] flex items-center">
+                          Integrate web3 tools that suites your need
                         </p>
                       </div>
                     </div>
-                    <div className="mt-[30px]">
-                      <div className="mt-[30px]">
-                        <b>
-                          <h1>OTHERS</h1>
-                        </b>
-                      </div>
-                      <div className="flex flex-col leading-tight mt-[27px]">
-                        <b>
-                          <p>FUSION+</p>
-                        </b>
-                        <p className="text-[15px]">
-                          Enjoy gasless cross-chain swaps and MEV protection
-                        </p>
-                      </div>
-                    </div>
+                    <div></div>
                   </div>
-                  <div className="productchild1  w-[40%] p-[15px]">
+                  <div className="row-span-2 ">
                     <b>
-                      <h1 className="text-[verdana]">PHYSICAL</h1>
+                      <p className="ml-[18px] text-[22px]">Protocols</p>
                     </b>
-                    <div className="flex flex-col leading-tight mt-[17px]">
-                      <b>
-                        <p>CARD</p>
-                      </b>
-                      <p className="text-[15px]">Pay with crypto anywhere</p>
+                    <div className="  flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
+                      <div>
+                        <img
+                          className="flex rounded-[18px] bg-[black] p-[12px] items-center justify-center"
+                          src={Swap}
+                        />
+                      </div>
+                      <div className="ml-[10px]  ">
+                        <b>
+                          <p className="flex items-center mt-[5px]">
+                            Developer portal
+                          </p>
+                        </b>
+                        <p className="text-[12.5px] mt-[5px] flex items-center">
+                          Integrate web3 tools that suites your need
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className=" w-[40%] p-[15px]">
-                    <div>
-                      <img className="rounded-[20px]" src={Fusion} />
+                    <div className="  flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
+                      <div>
+                        <img
+                          className="flex rounded-[18px] bg-[black] p-[12px] items-center justify-center"
+                          src={Swap}
+                        />
+                      </div>
+                      <div className="ml-[10px]  ">
+                        <b>
+                          <p className="flex items-center mt-[5px]">
+                            Developer portal
+                          </p>
+                        </b>
+                        <p className="text-[12.5px] mt-[5px] flex items-center">
+                          Integrate web3 tools that suites your need
+                        </p>
+                      </div>
                     </div>
-                    <div className="mt-[15px]">
-                      <b>Cross chain swaps are here!</b>
-                      <p className="text-[16px]">
-                        seamless, secure and self-custodial, all at once
-                      </p>
-                    </div>
-                    <div className="mt-[20px]">
-                      <Button
-                        className=" pl-[10px]  pr-[10px] bg-[transparent] border border-[2px solid white] "
-                        props="Learn more"
-                      />
+                    <div className="  flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
+                      <div>
+                        <img
+                          className="flex rounded-[18px] bg-[black] p-[12px] items-center justify-center"
+                          src={Swap}
+                        />
+                      </div>
+                      <div className="ml-[10px]  ">
+                        <b>
+                          <p className="flex items-center mt-[5px]">
+                            Developer portal
+                          </p>
+                        </b>
+                        <p className="text-[12.5px] mt-[5px] flex items-center">
+                          Integrate web3 tools that suites your need
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
