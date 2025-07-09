@@ -7,6 +7,10 @@ import Swap from "./Images/swapping.svg";
 import Wallet from "./Images/wallet.svg";
 import Portfolio from "./Images/portfolio.svg";
 import Hunter from "./Images/hunter.svg";
+import Devportal from "./Images/devportal.svg";
+import Aggregration from "./Images/Aggregationprotocol.svg";
+import LimitOrder from "./Images/Limitorder.svg";
+import LiquidityPool from "./Images/Liquidtypool.svg";
 
 const Header = () => {
   const [scroll, setScrolled] = useState(false);
@@ -131,7 +135,7 @@ const Header = () => {
                         <div>
                           <img
                             className="flex rounded-[22px] bg-[black] p-[8px] items-center justify-center"
-                            src={Portfolio}
+                            src={Hunter}
                           />
                         </div>
                         <div className="ml-[10px]">
@@ -205,7 +209,7 @@ const Header = () => {
                       <div>
                         <img
                           className="flex rounded-[18px] bg-[black] p-[12px] items-center justify-center"
-                          src={Swap}
+                          src={Devportal}
                         />
                       </div>
                       <div className="ml-[10px]  ">
@@ -229,7 +233,7 @@ const Header = () => {
                       <div>
                         <img
                           className="flex rounded-[18px] bg-[black] p-[12px] items-center justify-center"
-                          src={Swap}
+                          src={Aggregration}
                         />
                       </div>
                       <div className="ml-[10px]  ">
@@ -247,7 +251,7 @@ const Header = () => {
                       <div>
                         <img
                           className="flex rounded-[18px] bg-[black] p-[12px] items-center justify-center"
-                          src={Swap}
+                          src={LimitOrder}
                         />
                       </div>
                       <div className="ml-[10px]  ">
@@ -265,7 +269,7 @@ const Header = () => {
                       <div>
                         <img
                           className="flex rounded-[18px] bg-[black] p-[12px] items-center justify-center"
-                          src={Swap}
+                          src={LiquidityPool}
                         />
                       </div>
                       <div className="ml-[10px]  ">
