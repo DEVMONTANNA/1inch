@@ -17,6 +17,12 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
   const [hover, setHover] = useState(false);
   const [developerScroll, setDeveloperScroll] = useState(false);
+  const [AboutScroll, setAboutScroll] = useState(false);
+  const [showtext, setShowText] = useState(false);
+
+  const toggleDropdown = () => {
+    setHover((prev) => !prev);
+  };
 
   useEffect(() => {
     function hanlleScroll() {
@@ -239,11 +245,12 @@ const Header = () => {
                       <div className="ml-[10px]  ">
                         <b>
                           <p className="flex items-center mt-[5px]">
-                            Developer portal
+                            Aggregation protocol
                           </p>
                         </b>
                         <p className="text-[12.5px] mt-[5px] flex items-center">
-                          Integrate web3 tools that suites your need
+                          The protocol aggregates liquidity from multiple DEXes
+                          to ensure the best swap rates
                         </p>
                       </div>
                     </div>
@@ -257,11 +264,11 @@ const Header = () => {
                       <div className="ml-[10px]  ">
                         <b>
                           <p className="flex items-center mt-[5px]">
-                            Developer portal
+                            Limit Order Protocol
                           </p>
                         </b>
                         <p className="text-[12.5px] mt-[5px] flex items-center">
-                          Integrate web3 tools that suites your need
+                          The most innovative and flexible functionality in Defi
                         </p>
                       </div>
                     </div>
@@ -275,6 +282,44 @@ const Header = () => {
                       <div className="ml-[10px]  ">
                         <b>
                           <p className="flex items-center mt-[5px]">
+                            Liquidity Protocol
+                          </p>
+                        </b>
+                        <p className="text-[12.5px] mt-[5px] flex items-center">
+                          A next-generation AMM that offers capital efficiency
+                          to liquidity providers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+            <div
+              onMouseEnter={() => setAboutScroll(true)}
+              className="flex items-center mr-[24px] cursor-pointer hover:text-white"
+            >
+              <ol className="mr-2">About</ol>
+              <i class="fas fa-angle-down text-[13px]"></i>
+              {AboutScroll && (
+                <div
+                  onMouseLeave={() => setAboutScroll(false)}
+                  className=" absolute bg-[#0b0b14]  z-50 w-[43vw] mt-[15px]  grid grid-rows-3 -left-[-250px] top-full pt-[15px]  p-[10px] rounded-[25px]"
+                >
+                  <div className="row-span-1 ">
+                    <b>
+                      <p className="ml-[18px] text-[22px]">About</p>
+                    </b>
+                    <div className="  flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
+                      <div>
+                        <img
+                          className="flex rounded-[18px] bg-[black] p-[12px] items-center justify-center"
+                          src={Devportal}
+                        />
+                      </div>
+                      <div className="ml-[10px]  ">
+                        <b>
+                          <p className="flex items-center mt-[5px]">
                             Developer portal
                           </p>
                         </b>
@@ -283,20 +328,80 @@ const Header = () => {
                         </p>
                       </div>
                     </div>
+                    <div></div>
+                  </div>
+                  <div className="row-span-2 ">
+                    <b>
+                      <p className="ml-[18px] text-[22px]">Protocols</p>
+                    </b>
+                    <div className="  flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
+                      <div>
+                        <img
+                          className="flex rounded-[18px] bg-[black] p-[12px] items-center justify-center"
+                          src={Aggregration}
+                        />
+                      </div>
+                      <div className="ml-[10px]  ">
+                        <b>
+                          <p className="flex items-center mt-[5px]">
+                            Aggregation protocol
+                          </p>
+                        </b>
+                        <p className="text-[12.5px] mt-[5px] flex items-center">
+                          The protocol aggregates liquidity from multiple DEXes
+                          to ensure the best swap rates
+                        </p>
+                      </div>
+                    </div>
+                    <div className="  flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
+                      <div>
+                        <img
+                          className="flex rounded-[18px] bg-[black] p-[12px] items-center justify-center"
+                          src={LimitOrder}
+                        />
+                      </div>
+                      <div className="ml-[10px]  ">
+                        <b>
+                          <p className="flex items-center mt-[5px]">
+                            Limit Order Protocol
+                          </p>
+                        </b>
+                        <p className="text-[12.5px] mt-[5px] flex items-center">
+                          The most innovative and flexible functionality in Defi
+                        </p>
+                      </div>
+                    </div>
+                    <div className="  flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
+                      <div>
+                        <img
+                          className="flex rounded-[18px] bg-[black] p-[12px] items-center justify-center"
+                          src={LiquidityPool}
+                        />
+                      </div>
+                      <div className="ml-[10px]  ">
+                        <b>
+                          <p className="flex items-center mt-[5px]">
+                            Liquidity Protocol
+                          </p>
+                        </b>
+                        <p className="text-[12.5px] mt-[5px] flex items-center">
+                          A next-generation AMM that offers capital efficiency
+                          to liquidity providers
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
-            </div>
-            <div className="flex items-center mr-[24px] cursor-pointer hover:text-white">
-              <ol className="mr-2">About</ol>
-              <i class="fas fa-angle-down text-[13px]"></i>
             </div>
             <div className="flex items-center mr-[24px] cursor-pointer hover:text-white">
               <ol className="mr-2">Community</ol>
               <i class="fas fa-angle-down text-[13px]"></i>
             </div>
             <div className="flex items-center mr-[24px] cursor-pointer hover:text-white">
-              <ol className="mr-2">Blog</ol>
+              <a href="https://blog.1inch.io/">
+                <ol className="mr-2">Blog</ol>
+              </a>
               <i class="fas fa-arrow-up-right-from-square text-[12px]"></i>
             </div>
           </ul>
@@ -316,30 +421,44 @@ const Header = () => {
         <div className="relative">
           <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh] mt-[50px] top-0  fixed   z-[4000] flex">
             <div className="w-[100%]">
-              <div className="w-[100%] bg-[red] h-[50px] mt-[20px] ">
+              <div className="w-[100%]  h-[50px] mt-[20px] ">
                 <button onClick={() => setMenu(false)} className=" float-right">
-                  <i className=" fas fa-times text-[white] text-[25px] mt-[20px] mr-[20px]"></i>
+                  <i className=" fas fa-times text-[white]  text-[25px] mt-[20px] mr-[20px]"></i>
                 </button>
               </div>
-              <ul className="text-[18px] text-[white] mt-[-20px]">
-                <div
-                  onMouseEnter={() => setHover(true)}
-                  onMouseLeave={() => setHover(false)}
-                  className="flex h-[60px] justify-between items-center mr-[24px] m-[10px] cursor-pointer hover:text-white"
-                >
-                  <p className="mr-2">Products</p>
-                  <i className="fas fa-angle-down text-sm text-[13px]  "></i>
-                </div>
-                {hover && (
-                  <div className="bg-red-600 h-[60px] z-[100]">
-                    Hover is active
+              <ul className="text-[18px] text-[white] mt-[30px] ">
+                <div className="relative">
+                  <div className="flex h-[30px] justify-between items-center mr-[24px] m-[10px] mb-[20px] cursor-pointer hover:text-white">
+                    <ol className="mr-2">Products</ol>
+                    {!showtext ? (
+                      <i
+                        onClick={() => setShowText(true)}
+                        className="fas fa-angle-down text-sm text-[13px] leading-none"
+                      ></i>
+                    ) : (
+                      <i
+                        onClick={() => setShowText(false)}
+                        className="fas fa-times text-sm text-[13px] leading-none"
+                      ></i>
+                    )}
                   </div>
-                )}
 
+                  {showtext && (
+                    <div className=" z-[100] pl-[20px] pb-[20px]">
+                      <ul>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">Swap</li>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">Wallet</li>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">Portfolio</li>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">Card</li>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">Fusion+</li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
                 <div className="pl-[10px] pr-[10px]">
                   <hr />
                 </div>
-                <div className="flex  h-[30px] justify-between items-center mr-[24px] m-[10px] mb-[20px] cursor-pointer hover:text-white">
+                <div className="flex   h-[30px] justify-between items-center mr-[24px] m-[10px] mb-[20px] cursor-pointer hover:text-white">
                   <ol className="mr-2">Developers</ol>
                   <i class="fas fa-angle-down text-[13px]"></i>
                 </div>
