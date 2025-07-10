@@ -19,6 +19,9 @@ const Header = () => {
   const [developerScroll, setDeveloperScroll] = useState(false);
   const [AboutScroll, setAboutScroll] = useState(false);
   const [showtext, setShowText] = useState(false);
+  const [developer, setDeveloper] = useState(false);
+  const [about, setAbout] = useState(false);
+  const [community, setCommunity] = useState(false);
 
   const toggleDropdown = () => {
     setHover((prev) => !prev);
@@ -446,11 +449,21 @@ const Header = () => {
                   {showtext && (
                     <div className=" z-[100] pl-[20px] pb-[20px]">
                       <ul>
-                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">Swap</li>
-                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">Wallet</li>
-                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">Portfolio</li>
-                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">Card</li>
-                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">Fusion+</li>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                          Swap
+                        </li>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                          Wallet
+                        </li>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                          Portfolio
+                        </li>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                          Card
+                        </li>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                          Fusion+
+                        </li>
                       </ul>
                     </div>
                   )}
@@ -458,24 +471,108 @@ const Header = () => {
                 <div className="pl-[10px] pr-[10px]">
                   <hr />
                 </div>
-                <div className="flex   h-[30px] justify-between items-center mr-[24px] m-[10px] mb-[20px] cursor-pointer hover:text-white">
-                  <ol className="mr-2">Developers</ol>
-                  <i class="fas fa-angle-down text-[13px]"></i>
+                <div>
+                  <div
+                    onMouseEnter={() => setDeveloper(true)}
+                    className="flex   h-[30px] justify-between items-center mr-[24px] m-[10px] mb-[20px] cursor-pointer hover:text-white"
+                  >
+                    <ol className="mr-2">Developers</ol>
+                    <i class="fas fa-angle-down text-[13px]"></i>
+                  </div>
+                  {developer && (
+                    <div
+                      onMouseLeave={() => setDeveloper(false)}
+                      className=" z-[100] pl-[20px] pb-[20px]  "
+                    >
+                      <ul>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                          Developer portal
+                        </li>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                          Aggregation protocol
+                        </li>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                          Limit order protocol
+                        </li>
+                        <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                          Liquidity order protocol
+                        </li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
                 <div className="pl-[10px] pr-[10px]">
                   <hr />
                 </div>
-                <div className="flex  justify-between items-center mr-[24px] m-[10px] mb-[24px] cursor-pointer hover:text-white">
+                <div
+                  onMouseEnter={() => setAbout(true)}
+                  className="flex  justify-between items-center mr-[24px] m-[10px] mb-[24px] cursor-pointer hover:text-white"
+                >
                   <ol className="mr-2">About</ol>
                   <i class="fas fa-angle-down text-[13px]"></i>
                 </div>
+                {about && (
+                  <div
+                    onMouseLeave={() => setAbout(false)}
+                    className=" z-[100] pl-[20px] pb-[20px]  "
+                  >
+                    <ul>
+                      <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                        Security
+                      </li>
+                      <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                        Partnership & stakeholders
+                      </li>
+                      <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                        Foundation
+                      </li>
+                      <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                        Press room
+                      </li>
+                      <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                        Contacts
+                      </li>
+                      <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                        Terms of use
+                      </li>
+                      <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                        Privacy policy
+                      </li>
+                      <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                        1inch security white paper
+                      </li>
+                      <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                        Tokens
+                      </li>
+                    </ul>
+                  </div>
+                )}
                 <div className="pl-[10px] pr-[10px]">
                   <hr />
                 </div>
-                <div className="flex justify-between items-center mr-[24px] m-[10px]  mb-[20px] cursor-pointer hover:text-white">
+                <div
+                  onMouseEnter={() => setCommunity(true)}
+                  className="flex justify-between items-center mr-[24px] m-[10px]  mb-[20px] cursor-pointer hover:text-white"
+                >
                   <ol className="mr-2">Community</ol>
                   <i class="fas fa-angle-down text-[13px]"></i>
                 </div>
+                {community && (
+                  <div
+                    onMouseLeave={() => setCommunity(false)}
+                    className=" z-[100] pl-[20px] pb-[20px]  "
+                  >
+                    <ul>
+                      <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                        DAO
+                      </li>
+
+                      <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
+                        Ambassador program
+                      </li>
+                    </ul>
+                  </div>
+                )}
                 <div className="pl-[10px] pr-[10px]">
                   <hr />
                 </div>
