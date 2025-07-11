@@ -97,6 +97,13 @@
 }
 
 
-/* body{
-  background-color: green;
-} */
+.g{
+color: white;
+border: 1px solid black!important;
+background: #007aff;
+}
+.getongooglebtn{
+  border: 1px solid black!important;
+  background: #007aff;
+  color: white;
+}

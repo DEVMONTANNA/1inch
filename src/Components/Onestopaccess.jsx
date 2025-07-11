@@ -15,19 +15,19 @@ const Onestopaccess = () => {
           <h3 className="text-[45px] onestopaccesstexts2 text-[white] font-stretch-30%">
             to decentralized finance
           </h3>
-          <div className="flex justify-between downloadbuttons">
+          <div className="flex justify-between downloadbuttons mt-[20px]">
          
              
-              <Button props="Launch dApp" className=" downloadbuttonsbutton" />
+              <Button props="Launch dApp" className="g downloadbuttonsbutton" />
             
             
             <Button
               props="Download on Appstore"
-              className="bg-[transparent]  border border-[1px solid white] downloadbuttonsbutton2"
+              className="bg-[transparent]  g border border-[1px solid white] downloadbuttonsbutton2"
             />
             <Button
               props="Get it on google play"
-              className="bg-[transparent]  border border-[1px solid white] downloadbuttonsbutton2"
+              className="bg-[transparent] getongooglebtn border border-[1px solid white] downloadbuttonsbutton2"
             />
           </div>
         </div>
