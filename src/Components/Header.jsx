@@ -421,7 +421,7 @@ const Header = () => {
       </div>
 
       {menu && (
-        <div className="relative">
+        <div className="relative overflow-y-auto">
           <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh] mt-[50px] top-0  fixed   z-[4000] flex">
             <div className="w-[100%]">
               <div className="w-[100%]  h-[50px] mt-[20px] ">
@@ -471,19 +471,23 @@ const Header = () => {
                 <div className="pl-[10px] pr-[10px]">
                   <hr />
                 </div>
-                <div>
-                  <div
-                    onMouseEnter={() => setDeveloper(true)}
-                    className="flex   h-[30px] justify-between items-center mr-[24px] m-[10px] mb-[20px] cursor-pointer hover:text-white"
-                  >
+                <div className="relative">
+                  <div className="flex   h-[30px] justify-between items-center mr-[24px] m-[10px] mb-[20px] cursor-pointer hover:text-white">
                     <ol className="mr-2">Developers</ol>
-                    <i class="fas fa-angle-down text-[13px]"></i>
+                    {!developer ? (
+                      <i
+                        onClick={() => setDeveloper(true)}
+                        className="fas fa-angle-down text-sm text-[13px] leading-none"
+                      ></i>
+                    ) : (
+                      <i
+                        onClick={() => setDeveloper(false)}
+                        className="fas fa-times text-sm text-[13px] leading-none"
+                      ></i>
+                    )}
                   </div>
                   {developer && (
-                    <div
-                      onMouseLeave={() => setDeveloper(false)}
-                      className=" z-[100] pl-[20px] pb-[20px] overflow-y-auto  "
-                    >
+                    <div className=" z-[100] pl-[20px] pb-[20px] overflow-y-auto  ">
                       <ul>
                         <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
                           Developer portal
@@ -504,13 +508,23 @@ const Header = () => {
                 <div className="pl-[10px] pr-[10px]">
                   <hr />
                 </div>
-                <div
-                  onMouseEnter={() => setAbout(true)}
-                  className="flex  justify-between items-center mr-[24px] m-[10px] mb-[24px] cursor-pointer hover:text-white"
-                >
-                  <ol className="mr-2">About</ol>
-                  <i class="fas fa-angle-down text-[13px]"></i>
+                <div>
+                  <div className="flex  justify-between items-center mr-[24px] m-[10px] mb-[24px] cursor-pointer hover:text-white">
+                    <ol className="mr-2">About</ol>
+                    {!about ? (
+                      <i
+                        onClick={() => setAbout(true)}
+                        className="fas fa-angle-down text-sm text-[13px] leading-none"
+                      ></i>
+                    ) : (
+                      <i
+                        onClick={() => setAbout(false)}
+                        className="fas fa-times text-sm text-[13px] leading-none"
+                      ></i>
+                    )}
+                  </div>
                 </div>
+
                 {about && (
                   <div
                     onMouseLeave={() => setAbout(false)}
@@ -550,16 +564,25 @@ const Header = () => {
                 <div className="pl-[10px] pr-[10px]">
                   <hr />
                 </div>
-                <div
-                  onMouseEnter={() => setCommunity(true)}
-                  className="flex justify-between items-center mr-[24px] m-[10px]  mb-[20px] cursor-pointer hover:text-white"
-                >
-                  <ol className="mr-2">Community</ol>
-                  <i class="fas fa-angle-down text-[13px]"></i>
+                <div>
+                  <div className="flex justify-between items-center mr-[24px] m-[10px]  mb-[20px] cursor-pointer hover:text-white">
+                    <ol className="mr-2">Community</ol>
+                    {!community ? (
+                      <i
+                        onClick={() => setCommunity(true)}
+                        className="fas fa-angle-down text-sm text-[13px] leading-none"
+                      ></i>
+                    ) : (
+                      <i
+                        onClick={() => setCommunity(false)}
+                        className="fas fa-times text-sm text-[13px] leading-none"
+                      ></i>
+                    )}
+                  </div>
                 </div>
                 {community && (
                   <div
-                    onMouseLeave={() => setCommunity(false)}
+                    onMouseLeave={() => setCommunity(true)}
                     className=" z-[100] pl-[20px] pb-[20px]  "
                   >
                     <ul>
