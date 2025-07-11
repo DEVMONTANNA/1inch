@@ -422,7 +422,7 @@ const Header = () => {
 
       {menu && (
         <div className="relative overflow-y-auto">
-          <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh] mt-[50px] top-0  fixed   z-[4000] flex">
+          <div className="mobile-header w-[100%] bg-[#06070a] h-[100vh]  top-0  fixed   z-[4000] flex">
             <div className="w-[100%]">
               <div className="w-[100%]  h-[50px] mt-[20px] ">
                 <button onClick={() => setMenu(false)} className=" float-right">
