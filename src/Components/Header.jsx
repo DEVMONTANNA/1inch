@@ -482,7 +482,7 @@ const Header = () => {
                   {developer && (
                     <div
                       onMouseLeave={() => setDeveloper(false)}
-                      className=" z-[100] pl-[20px] pb-[20px]  "
+                      className=" z-[100] pl-[20px] pb-[20px] overflow-y-auto  "
                     >
                       <ul>
                         <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
@@ -514,7 +514,7 @@ const Header = () => {
                 {about && (
                   <div
                     onMouseLeave={() => setAbout(false)}
-                    className=" z-[100] pl-[20px] pb-[20px]  "
+                    className=" z-[100] pl-[20px] pb-[20px] overflow-y-auto  "
                   >
                     <ul>
                       <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
