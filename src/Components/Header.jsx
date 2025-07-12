@@ -741,6 +741,11 @@ const Header = () => {
         </div>
       )}
       <div className="hamburgerdiv">
+        <div className="w-[35%]  cursor-pointer hidden tabletlogodisplay">
+          <a href="home.html">
+            <img src={Logo} alt="logo" />
+          </a>
+        </div>
         <button className="hamburger-menu" onClick={() => setMenu(true)}>
           <i className="fas fa-bars text-white text-[24px]"></i>
         </button>
