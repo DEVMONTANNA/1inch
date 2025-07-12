@@ -1,8 +1,8 @@
 @media (max-width: 600px) {
-  .mobilelogo{
+  .mobilelogo {
     display: block;
   }
-  .smallscreendisplay{
+  .smallscreendisplay {
     display: flex;
   }
   .header {
@@ -62,14 +62,14 @@
     width: 90%;
     padding: 20px;
   }
-.onetospacefigureholder{
-  margin-top: -200px;
-}
+  .onetospacefigureholder {
+    margin-top: -200px;
+  }
   .pricedatafigures {
     font-size: 30px;
     font-weight: 450;
   }
-  .optimizeyourtradetext{
+  .optimizeyourtradetext {
     font-size: 27px;
   }
 }
@@ -84,7 +84,7 @@
   .onestopaccess {
     padding: 0;
   }
-  .smallscreendisplay{
+  .smallscreendisplay {
     display: none;
   }
 }
@@ -93,17 +93,36 @@
   .mobile-header {
     display: none;
   }
-  
 }
 
-
-.g{
-color: white;
-border: 1px solid black!important;
-background: #007aff;
+.g {
+  color: white;
+  border: 1px solid black !important;
+  background: #007aff;
 }
-.getongooglebtn{
-  border: 1px solid black!important;
+.getongooglebtn {
+  border: 1px solid black !important;
   background: #007aff;
   color: white;
+}
+
+.hamburgerdiv {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hamburgerdiv {
+    display: block;
+    border: none;
+    cursor: pointer;
+    padding: 30px;
+  }
+  .hamburger-menu {
+    float: right;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .desktop-nav {
+    display: none;
+  }
 }

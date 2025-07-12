@@ -22,6 +22,7 @@ const Header = () => {
   const [developer, setDeveloper] = useState(false);
   const [about, setAbout] = useState(false);
   const [community, setCommunity] = useState(false);
+  const [langaugeToggle, setLanguageToggle] = useState(false);
 
   const toggleDropdown = () => {
     setHover((prev) => !prev);
@@ -409,13 +410,79 @@ const Header = () => {
             </div>
           </ul>
         </div>
-        <div className="flex mr-[30px]  p-[10px]">
-          <div className="flex  items-center mr-[26px]">
-            <i class="fas fa-globe fa-1x text-[#fff9] mr-[5px] cursor-pointer hover:text-[white]"></i>
-            <p className=" text-[#fff9] cursor-pointer  hover:text-[white] ">
-              EN
-            </p>
+        <div className="flex mr-[30px]  p-[10px] relative">
+          <div className="relative">
+            {/* Trigger Section */}
+            <div
+              onClick={() => setLanguageToggle(true)}
+              className="flex items-center mr-[26px] mt-[12px] cursor-pointer"
+            >
+              <i className="fas fa-globe fa-1x text-[#fff9] mr-[5px]  hover:text-white"></i>
+              <p className="text-[#fff9] hover:text-white">EN</p>
+            </div>
+
+            {langaugeToggle && (
+              <div className="absolute top-full left-[-500px] bg-[#0b0b14]  w-[40vw] mt-[30px] p-[20px] rounded-[25px]">
+                <div className="flex items-center justify-between mb-[10px]">
+                  <p className="text-[22px] text-white">Change language</p>
+                  <i
+                    onClick={() => setLanguageToggle(false)}
+                    className="fas fa-times text-white text-[22px] cursor-pointer"
+                  ></i>
+                </div>
+
+                <hr className="border-white mb-[15px]" />
+
+                <div className="grid grid-cols-2 gap-[10px]">
+                  <div className="flex flex-col gap-[10px] text-[white] text-[18px]">
+                    <div className=" p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] rounded-[10px] ">
+                      🇫🇷 Francais - FR
+                    </div>
+                    <div className="p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black]  rounded-[10px]">
+                      🇪🇸 Espanyol - ES
+                    </div>
+                    <div className="p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black]  rounded-[10px]">
+                      🇩🇪 German
+                    </div>
+                    <div className="  p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black]  rounded-[10px]">
+                      🇨🇳 Chinese
+                    </div>
+                    <div className=" p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black]  rounded-[10px]">
+                      🇸🇦 Arabic
+                    </div>
+                    <div className=" p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black]  rounded-[10px]">
+                      🇵🇹 Portuguese
+                    </div>
+                    <div className=" p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black]  rounded-[10px]">
+                      🇯🇵 Japanese
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-[10px] text-[white] items-start text-[18px]">
+                    <div className=" p-[10px] w-[100%]   rounded-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] hover:w-[100%]">
+                      🇮🇹 Italian
+                    </div>
+                    <div className=" p-[10px] w-[100%]  rounded-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] hover:w-[100%]">
+                      🇷🇺 Russian
+                    </div>
+                    <div className=" p-[10px]  w-[100%]  rounded-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] hover:w-[100%]">
+                      🇰🇷 Korean
+                    </div>
+                    <div className=" p-[10px]  w-[100%]  rounded-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] hover:w-[100%]">
+                      🇹🇷 Turkish
+                    </div>
+                    <div className=" p-[10px]  w-[100%]  rounded-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] hover:w-[100%]">
+                      🇳🇱 Dutch
+                    </div>
+                    <div className=" p-[10px]  w-[100%]  rounded-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] hover:w-[100%]">
+                      🇸🇪 Swedish
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
+
           <Button props="Launch dApp" />
         </div>
       </div>
@@ -526,10 +593,7 @@ const Header = () => {
                 </div>
 
                 {about && (
-                  <div
-                    onMouseLeave={() => setAbout(false)}
-                    className=" z-[100] pl-[20px] pb-[20px] overflow-y-auto  "
-                  >
+                  <div className=" z-[100] pl-[20px] pb-[20px] overflow-y-auto  ">
                     <ul>
                       <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
                         Security
@@ -608,8 +672,66 @@ const Header = () => {
                 </div>
                 <div className="flex justify-between items-center mr-[24px] m-[10px]  cursor-pointer hover:text-white">
                   <ol className="mr-2">Language</ol>
-                  <i class="fas fa-angle-down text-[13px]"></i>
+                  {!langaugeToggle ? (
+                    <i
+                      onClick={() => setLanguageToggle(true)}
+                      className="fas fa-angle-down text-sm text-[13px] leading-none"
+                    ></i>
+                  ) : (
+                    <i
+                      onClick={() => setLanguageToggle(false)}
+                      className="fas fa-times text-sm text-[13px] leading-none"
+                    ></i>
+                  )}
                 </div>
+                {langaugeToggle && (
+                  <div className="grid grid-rows-2 gap-[10px] pl-[25px]">
+                    <div className="flex flex-col gap-[10px] text-[white] text-[24px]">
+                      <div className=" p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] rounded-[10px] ">
+                        🇫🇷 Francais - FR
+                      </div>
+                      <div className="p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black]  rounded-[10px]">
+                        🇪🇸 Espanyol - ES
+                      </div>
+                      <div className="p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black]  rounded-[10px]">
+                        🇩🇪 German
+                      </div>
+                      <div className="  p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black]  rounded-[10px]">
+                        🇨🇳 Chinese
+                      </div>
+                      <div className=" p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black]  rounded-[10px]">
+                        🇸🇦 Arabic
+                      </div>
+                      <div className=" p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black]  rounded-[10px]">
+                        🇵🇹 Portuguese
+                      </div>
+                      <div className=" p-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black]  rounded-[10px]">
+                        🇯🇵 Japanese
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col gap-[10px] text-[white] items-start text-[24px]">
+                      <div className=" p-[10px] w-[100%]   rounded-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] hover:w-[100%]">
+                        🇮🇹 Italian
+                      </div>
+                      <div className=" p-[10px] w-[100%]  rounded-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] hover:w-[100%]">
+                        🇷🇺 Russian
+                      </div>
+                      <div className=" p-[10px]  w-[100%]  rounded-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] hover:w-[100%]">
+                        🇰🇷 Korean
+                      </div>
+                      <div className=" p-[10px]  w-[100%]  rounded-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] hover:w-[100%]">
+                        🇹🇷 Turkish
+                      </div>
+                      <div className=" p-[10px]  w-[100%]  rounded-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] hover:w-[100%]">
+                        🇳🇱 Dutch
+                      </div>
+                      <div className=" p-[10px]  w-[100%]  rounded-[10px] hover:bg-[rgb(213,218,213)] hover:text-[black] hover:w-[100%]">
+                        🇸🇪 Swedish
+                      </div>
+                    </div>
+                  </div>
+                )}
                 <div className="pl-[8px] pr-[8px] mt-[35px]">
                   <Button props="Launch dApp" className="w-[100%] h-[60px] " />
                 </div>
@@ -618,6 +740,11 @@ const Header = () => {
           </div>
         </div>
       )}
+      <div className="hamburgerdiv">
+        <button className="hamburger-menu" onClick={() => setMenu(true)}>
+          <i className="fas fa-bars text-white text-[24px]"></i>
+        </button>
+      </div>
     </div>
   );
 };
