@@ -21,24 +21,22 @@ const Logo = () => {
 
   return (
     <>
-     
-        <div className="w-full flex gap-4 hide-scrollbar  overflow-x-auto">
-          {api &&
-            api.map((item, index) => (
-                <div className="w-[300px] bg-[red] flex flex-col ">
-                <img
-                  key={index}
-                  src={item.image}
-                  alt={item.name}
-                  className="w-full h-full object-contain"
-                />
-                <p className="text-[white]"> {item.symbol}</p>
-              </div>
-              
-          
-            ))}
-        </div>
-    
+      <div className="w-full flex gap-4 overflow-x-auto hide-scrollbar">
+        {api &&
+          api.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center min-w-[100px]"
+            >
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-[100px] h-[100px] object-contain"
+              />
+              <p className="text-white text-sm mt-2">{item.symbol}</p>
+            </div>
+          ))}
+      </div>
     </>
   );
 };
