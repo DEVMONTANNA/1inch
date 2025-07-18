@@ -31,7 +31,7 @@ const Logo = () => {
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-[100px] h-[100px] object-contain"
+                className="w-[100px] h-[100px] object-contain rounded-[20px]"
               />
               <p className="text-white text-sm mt-2">{item.symbol}</p>
             </div>
