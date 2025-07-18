@@ -8,7 +8,7 @@ const Learningapi = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [logoApi, setLogoApi] = useState("");
+  const [logoApi, setLogoApi] = useState([]);
 
   async function callLogoApi() {
     try {
