@@ -26,7 +26,7 @@ const Logo = () => {
           api.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center min-w-[100px]"
+              className="flex flex-col items-center min-w-[100px] cursor-grab"
             >
               <img
                 src={item.image}
