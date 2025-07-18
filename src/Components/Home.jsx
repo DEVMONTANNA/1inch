@@ -3,7 +3,7 @@ import image from "./Images/press.png";
 import Header from "./Header";
 import Onestopaccess from "./Onestopaccess";
 import OptimizeYourTrades from "./OptimizeYourTrades";
-import Learningapi from "./learningapi";
+import Logo from "./Logo";
 
 const Home = () => {
   const [count, setCount] = useState(0);
@@ -23,11 +23,10 @@ const Home = () => {
         className="bg-cover bg-center   min-h-screen"
         style={{ backgroundImage: `url(${image})` }}
       >
-        
-         <Header /> 
+        <Header />
         <Onestopaccess />
-        <OptimizeYourTrades /> 
-        <Learningapi/>
+        <OptimizeYourTrades />
+        <Logo />
       </div>
     </>
   );
