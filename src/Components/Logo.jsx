@@ -21,7 +21,7 @@ const Logo = () => {
 
   return (
     <>
-      <div className="w-full flex gap-4 overflow-x-auto hide-scrollbar">
+      <div className="w-full flex gap-4 overflow-x-auto hide-scrollbar ">
         {api &&
           api.map((item, index) => (
             <div

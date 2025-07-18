@@ -26,7 +26,9 @@ const Home = () => {
         <Header />
         <Onestopaccess />
         <OptimizeYourTrades />
-        <Logo />
+        <div className="mt-[50px]">
+          <Logo />
+        </div>
       </div>
     </>
   );
