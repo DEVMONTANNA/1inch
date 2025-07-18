@@ -26,8 +26,8 @@ const Home = () => {
         
          <Header /> 
         <Onestopaccess />
-        <Learningapi/>
         <OptimizeYourTrades /> 
+        <Learningapi/>
       </div>
     </>
   );
