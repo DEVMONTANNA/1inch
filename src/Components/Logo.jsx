@@ -26,12 +26,12 @@ const Logo = () => {
           api.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center min-w-[100px] cursor-grab"
+              className="flex flex-col items-center min-w-[100px] "
             >
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-[100px] h-[100px] object-contain rounded-[20px]"
+                className="w-[100px]  h-[100px] object-contain rounded-[20px]"
               />
               <p className="text-white text-sm mt-2">{item.symbol}</p>
             </div>
