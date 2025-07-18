@@ -150,7 +150,7 @@ const Learningapi = () => {
                   <img
                     src={item.image}
                     alt={item.name}
-                    // className="w-16 h-16 object-contain"
+                    className="w-16 h-16 object-contain"
                   />
                   <p className="text-[white]">{item.symbol}</p>
                 </div>
