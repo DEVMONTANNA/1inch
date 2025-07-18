@@ -139,7 +139,7 @@ const Learningapi = () => {
       </form> */}
 
       <div>
-        <div className="flex overflow-x-auto  gap-4 mt-4 p-[25px] ">
+        <div className="flex overflow-x-auto hide-scrollbar  gap-4 mt-4 p-[25px] ">
           {logoApi &&
             logoApi.map((item, index) => {
               return (
