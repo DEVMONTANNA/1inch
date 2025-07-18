@@ -148,8 +148,7 @@ const Learningapi = () => {
                   className="min-w-[100px] flex flex-col items-center"
                 >
                   <img
-                    src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png"
-                    
+                    src={item.image}
                     alt={item.name}
                     className="w-16 h-16 object-contain"
                   />
