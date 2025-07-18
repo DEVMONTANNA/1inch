@@ -75,7 +75,7 @@ const Header = () => {
               className="flex  relative items-center mr-[24px] cursor-pointer hover:text-white"
             >
               <ol className="mr-2">Products</ol>
-              <i class="fas fa-angle-down text-[13px]"></i>
+              <i className="fas fa-angle-down text-[13px]"></i>
               {hover && (
                 <div
                   onMouseLeave={() => setHover(false)}
