@@ -1,11 +1,11 @@
 @media (max-width: 600px) {
-  .omneinchwallet{
+  .omneinchwallet {
     display: block;
   }
-  .oneinchwalletsmallscreen{
+  .oneinchwalletsmallscreen {
     width: 100%;
   }
-  .inchwalletheading{
+  .inchwalletheading {
     display: none;
   }
   .mobilelogo {
@@ -83,8 +83,16 @@
   }
 }
 
-
 @media (min-width: 600px) and (max-width: 1024px) {
+  .omneinchwallet {
+    display: block;
+  }
+  .oneinchwalletsmallscreen {
+    width: 100%;
+  }
+  .inchwalletheading {
+    display: none;
+  }
   .header {
     display: none;
   }

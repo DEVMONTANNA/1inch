@@ -11,7 +11,7 @@ const OneinchProuducts = () => {
           <p>1inch Portfolio</p>
         </b>
       </div>
-      <div className=" ] flex text-[white]">
+      <div className="  flex text-[white]">
         <div className=" items-center justify-center   w-[100%] p-[20px] flex ">
           <div className=" w-[100%]  rounded-[20px] omneinchwallet p-[20px] flex justify-around items-center">
             <div className=" p-[15px] ">
@@ -30,7 +30,30 @@ const OneinchProuducts = () => {
                 />
               </div>
             </div>
-            <img className="0px]" src={Phoneimg} />
+            <img className="portfolioimg" src={Phoneimg} />
+          </div>
+        </div>
+      </div>
+      <div className="  flex text-[white]">
+        <div className=" items-center justify-center   w-[100%] p-[10px] flex ">
+          <div className=" w-[100%]  rounded-[20px] omneinchwallet p-[20px] flex justify-around items-center">
+            <img className="portfolioimg" src={Port2} />
+            <div className=" p-[15px] ">
+              <b className="text-center text-[45px] flex justify-start">
+                <p>1inch Portfolio</p>
+              </b>
+              <p className="text-[14px] text-[#fff9]">
+                A cutting-edge tracking tool offering accurate, detailed and
+                well-organized crypto portfolio information.
+              </p>
+              <div className="flex mt-[55px] oneinchwalletsmallscreen   w-[50%] justify-between">
+                <Button className=" " props="Launch portfolio" />
+                <Button
+                  className="bg-[transparent]  border border-amber-50"
+                  props="Learn more"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
