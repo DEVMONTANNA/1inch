@@ -73,6 +73,16 @@
     font-size: 27px;
   }
 }
+.omneinchwallet {
+  display: block;
+  /* background-color: yellow; */
+}
+.oneinchwalletsmallscreen {
+  width: 100%;
+}
+.inchwalletheading{
+  display: none;
+}
 
 @media (min-width: 600px) and (max-width: 1024px) {
   .header {
