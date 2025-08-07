@@ -1,4 +1,7 @@
 @media (max-width: 600px) {
+  .boldtext{
+    font-size: 30px;
+  }
   .omneinchwallet {
     display: block;
   }

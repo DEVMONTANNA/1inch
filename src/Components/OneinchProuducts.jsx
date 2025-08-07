@@ -2,6 +2,7 @@ import React from "react";
 import Port2 from "../Components/Images/Port2.png";
 import Phoneimg from "../Components/Images/Phoneimg.png";
 import Oneinchcard from "../Components/Images/Oneinchcard.png";
+import Threeinoneimg from "../Components/Images/Threeinoneimg.png";
 import Button from "./Button";
 
 const OneinchProuducts = () => {
@@ -16,7 +17,7 @@ const OneinchProuducts = () => {
         <div className=" items-center justify-center   w-[100%] p-[20px] flex ">
           <div className=" w-[100%]  rounded-[20px] omneinchwallet p-[20px] flex justify-around items-center">
             <div className=" p-[15px] ">
-              <b className="text-center text-[45px] flex justify-start">
+              <b className="text-center text-[45px] flex justify-start boldtext">
                 <p>1inch Wallet</p>
               </b>
               <p className="text-[14px] text-[#fff9]">
@@ -40,7 +41,7 @@ const OneinchProuducts = () => {
           <div className=" w-[100%]  rounded-[20px] omneinchwallet p-[20px] flex justify-around items-center">
             <img className="portfolioimg" src={Port2} />
             <div className=" p-[15px] ">
-              <b className="text-center text-[45px] flex justify-start">
+              <b className="text-center text-[45px] flex justify-start boldtext">
                 <p>1inch Portfolio</p>
               </b>
               <p className="text-[14px] text-[#fff9]">
@@ -62,7 +63,7 @@ const OneinchProuducts = () => {
         <div className=" items-center justify-center   w-[100%] p-[10px] flex ">
           <div className=" w-[100%]  rounded-[20px] omneinchwallet p-[20px] flex justify-around items-center">
             <div className=" p-[15px] ">
-              <b className="text-center text-[45px] flex justify-start">
+              <b className="text-center text-[45px] flex justify-start boldtext">
                 <p>1inch Card</p>
               </b>
               <p className="text-[14px] text-[#fff9]">
@@ -77,6 +78,30 @@ const OneinchProuducts = () => {
               </div>
             </div>
             <img className="portfolioimg" src={Oneinchcard} />
+          </div>
+        </div>
+      </div>
+      <div className="  flex text-[white]">
+        <div className=" items-center justify-center   w-[100%] p-[10px] flex ">
+          <div className=" w-[100%]  rounded-[20px] omneinchwallet p-[20px] block">
+            <div className=" p-[15px] text-center ">
+              <b className=" text-[45px] boldtext ">
+                <p>Build your own Web3 solution</p>
+              </b>
+              <p className="text-[16px] text-[#fff9]">
+                A physical & virtual card for digital assets.
+              </p>
+            </div>
+            <div className="w-full flex justify-center items-center">
+              <img className="portfolioimg " src={Threeinoneimg} />
+            </div>
+            <div className="justify-center flex items-center">
+              <Button className=" " props="Launch Dev.Portal" />
+              <Button
+                className="bg-[transparent] ml-[30px]  border border-amber-50"
+                props="Learn more"
+              />
+            </div>
           </div>
         </div>
       </div>
