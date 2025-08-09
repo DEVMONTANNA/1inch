@@ -7,6 +7,7 @@ import Logo from "./Logo";
 import Button from "./Button";
 import OneinchProuducts from "./OneinchProuducts";
 import Portfolio from "./Portfolio";
+import Card from "./Card";
 
 const Home = () => {
   const [count, setCount] = useState(0);
@@ -110,8 +111,9 @@ const Home = () => {
 
        <div
         className="bg-cover bg-center   n"
-        style={{ backgroundImage: `url(${image})` }}
+        // style={{ backgroundImage: `url(${image})` }}
       >
+        {/* <Card/> */}
         <Header />
         <Onestopaccess />
         <OptimizeYourTrades />
