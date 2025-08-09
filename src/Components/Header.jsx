@@ -58,7 +58,7 @@ const Header = () => {
               className="float-right   mr-[10px]"
               onClick={() => setMenu(true)}
             >
-              <i className="fas fa-bars fa-1x text-[white] ">hello</i>
+              <i className="fas fa-bars fa-1x text-[white] "></i>
             </button>
           </div>
         </div>

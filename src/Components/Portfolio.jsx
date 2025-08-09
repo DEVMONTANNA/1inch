@@ -40,14 +40,46 @@ const Portfolio = () => {
         </div>
         <div className=" mt-[30px]">
           {performance === "Mobile chain" ? (
-            <img src={PortFirstImg} />
+            <div className="p-[12px]">
+              <img src={PortFirstImg} />
+              <b>
+                <h1 className="text-[white] text-[25px]">
+                  Track your performance across multiple chains
+                </h1>
+              </b>
+              <p className="text-[white] text-[17px]">
+                Simultaneously track asset performance across major blockchains
+                or use filters to select a specific network
+              </p>
+            </div>
           ) : performance === "Mobile wallet" ? (
-            <img src={Port2} />
+            <div className="p-[12px]">
+              <img src={Port2} />
+              <b>
+                <h1 className="text-[white] text-[25px]">
+                  Track your performance across multiple Defi protocols
+                </h1>
+              </b>
+              <p className="text-[white] text-[17px]">
+                Get comprehensive analytics of your Lp positions such as Uniswap
+                V3, Lido Aave etc.
+              </p>
+            </div>
           ) : (
-            <img src={Threeinone} />
+            <div className="p-[12px]">
+              <img src={Threeinone} />
+              <b>
+                <h1 className="text-[white] text-[25px]">
+                  Track your performance across multiple wallets
+                </h1>
+              </b>
+              <p className="text-[white] text-[17px]">
+                Add as many wallets as you need and monitor combined assets.
+              </p>
+            </div>
           )}
         </div>
-        <div className="flex justify-between items-center mt-[20px] text-[white] p-[10px]">
+        <div className="flex justify-between items-center mt-[20px] text-[white] p-[20px]">
           <button
             className="bg-transparent border-b-2 border-b-transparent hover:border-b-orange-500"
             onClick={() => setPerformance("Mobile wallet")}
