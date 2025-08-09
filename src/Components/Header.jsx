@@ -11,6 +11,7 @@ import Devportal from "./Images/devportal.svg";
 import Aggregration from "./Images/Aggregationprotocol.svg";
 import LimitOrder from "./Images/Limitorder.svg";
 import LiquidityPool from "./Images/Liquidtypool.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [scroll, setScrolled] = useState(false);
@@ -57,7 +58,7 @@ const Header = () => {
               className="float-right   mr-[10px]"
               onClick={() => setMenu(true)}
             >
-              <i className="fas fa-bars fa-1x text-[white] "></i>
+              <i className="fas fa-bars fa-1x text-[white] ">hello</i>
             </button>
           </div>
         </div>
@@ -488,7 +489,7 @@ const Header = () => {
               )}
             </div>
 
-            <Button props="Launch dApp" />
+            <Button buttonColor="blue" props="Launch dApp" />
           </div>
         </div>
 
@@ -530,9 +531,11 @@ const Header = () => {
                           <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
                             Wallet
                           </li>
+
                           <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
-                            Portfolio
+                            <Link to="/portfolio">Portfolio</Link>
                           </li>
+
                           <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
                             Card
                           </li>

@@ -1,5 +1,15 @@
+.portfoliosmallscreen {
+  display: none;
+}
+
 @media (max-width: 600px) {
-  .boldtext{
+  .portfoliosmallscreen {
+    display:  block !important;
+  }
+  .portfoliolargescreen {
+    display: none;
+  }
+  .boldtext {
     font-size: 30px;
   }
   .omneinchwallet {
@@ -168,3 +178,4 @@ html {
 body {
   background-color: #0b0b14;
 }
+
