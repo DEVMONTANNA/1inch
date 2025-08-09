@@ -81,12 +81,15 @@ const Portfolio = () => {
         </div>
         <div className="flex justify-between items-center mt-[20px] text-[white] p-[20px]">
           <button
-            className="bg-transparent border-b-2 border-b-transparent hover:border-b-orange-500"
+            className={`bg-transparent border-b-2 ${
+              performance === "Mobile wallet"
+                ? "border-b-orange-500"
+                : "border-b-transparent"
+            }`}
             onClick={() => setPerformance("Mobile wallet")}
           >
             Mobile wallet
           </button>
-
           <button
             className="bg-transparent border-b-2 border-b-transparent hover:border-b-orange-500"
             onClick={() => setPerformance("Mobile chain")}
