@@ -29,7 +29,7 @@ const Portfolio = () => {
           </b>
         </div>
         <div className="pl-[15px] pr-[15px] mt-[30px]">
-          <Button width="100%" buttonColor="orange-500" props="Get started" />
+          <Button width="100%" buttonColor="orange" props="Get started" />
         </div>
         <div className="pl-[20px] mt-[60px]">
           <b>
