@@ -13,7 +13,7 @@ const Onestopaccess = () => {
             </span>
           </h1>
           <h3 className="text-[45px] onestopaccesstexts2 text-[white] font-stretch-30%">
-            to decentralized finance
+            to decentralized financ
           </h3>
           <div className="flex justify-between downloadbuttons mt-[20px]">
             <Button props="Launch dApp" className="g downloadbuttonsbutton" />
