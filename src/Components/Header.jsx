@@ -540,7 +540,7 @@ const Header = () => {
                             <Link to="/card">Card</Link>
                           </li>
                           <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
-                            Fusion+
+                            <Link to="/fusion">Fusion+</Link>
                           </li>
                         </ul>
                       </div>

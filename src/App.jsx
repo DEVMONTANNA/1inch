@@ -6,6 +6,7 @@ import Log from "./Components/Log.jsx";
 import Portfolio from "./Components/Portfolio.jsx";
 import Header from "./Components/Header.jsx";
 import Card from "./Components/Card.jsx";
+import Fusion from "./Components/Fusion.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,7 +17,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/card" element={<Card />}/>
+          <Route path="/card" element={<Card />} />
+          <Route path="/fusion" element={<Fusion />} />
         </Routes>
       </Router>
     </div>

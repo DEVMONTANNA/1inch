@@ -8,6 +8,7 @@ import Button from "./Button";
 import OneinchProuducts from "./OneinchProuducts";
 import Portfolio from "./Portfolio";
 import Card from "./Card";
+import Fusion from "./Fusion";
 
 const Home = () => {
   const [count, setCount] = useState(0);
@@ -109,20 +110,21 @@ const Home = () => {
         </footer>
       </div> */}
 
-       <div
+      <div
         className="bg-cover bg-center   n"
         // style={{ backgroundImage: `url(${image})` }}
       >
-        {/* <Card/> */}
+        {/* <Fusion/>
+        <Card/> */}
         <Header />
         <Onestopaccess />
         <OptimizeYourTrades />
-      </div>  
+      </div>
       <div className="mt-[50px] ">
         <Logo />
-      </div> 
+      </div>
       <OneinchProuducts />
-    {/* <Portfolio/> */}
+      {/* <Portfolio/> */}
     </>
   );
 };
