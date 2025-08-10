@@ -113,15 +113,15 @@ const Home = () => {
         className="bg-cover bg-center   n"
         // style={{ backgroundImage: `url(${image})` }}
       >
-        <Card/>
-        {/* <Header />
+        {/* <Card/> */}
+        <Header />
         <Onestopaccess />
-        <OptimizeYourTrades /> */}
+        <OptimizeYourTrades />
       </div>  
       <div className="mt-[50px] ">
         <Logo />
       </div> 
-      {/* <OneinchProuducts /> */}
+      <OneinchProuducts />
     {/* <Portfolio/> */}
     </>
   );
