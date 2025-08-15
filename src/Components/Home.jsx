@@ -9,6 +9,7 @@ import OneinchProuducts from "./OneinchProuducts";
 import Portfolio from "./Portfolio";
 import Card from "./Card";
 import Fusion from "./Fusion";
+import Security from "./Security";
 
 const Home = () => {
   const [count, setCount] = useState(0);
@@ -112,8 +113,9 @@ const Home = () => {
 
       <div
         className="bg-cover bg-center   n"
-        // style={{ backgroundImage: `url(${image})` }}
+        style={{ backgroundImage: `url(${image})` }}
       >
+        {/* <Security/> */}
         {/* <Fusion/>
         <Card/> */}
         <Header />
@@ -123,7 +125,7 @@ const Home = () => {
       <div className="mt-[50px] ">
         <Logo />
       </div>
-      <OneinchProuducts />
+      {/* <OneinchProuducts /> */}
       {/* <Portfolio/> */}
     </>
   );

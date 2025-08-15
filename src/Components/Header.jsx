@@ -607,7 +607,7 @@ const Header = () => {
                     <div className=" z-[100] pl-[20px] pb-[20px] overflow-y-auto  ">
                       <ul>
                         <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
-                          Security
+                          <Link to="/security">Security</Link>
                         </li>
                         <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
                           Partnership & stakeholders
