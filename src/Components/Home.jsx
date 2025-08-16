@@ -125,7 +125,7 @@ const Home = () => {
       <div className="mt-[50px] ">
         <Logo />
       </div>
-      {/* <OneinchProuducts /> */}
+      <OneinchProuducts />
       {/* <Portfolio/> */}
     </>
   );

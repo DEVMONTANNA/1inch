@@ -243,6 +243,22 @@ const Security = () => {
                       props="Read white paper"
                     />
                   </div>
+                  <div className="mt-[30px]">
+                    <b>
+                      <p className="text-[#fff] text-[20px] ">Contact us</p>
+                    </b>
+                    <p className="text-[17px] text-[#fff9] mt-[11px]">
+                      Reach out to the 1inch compliance team if you have any
+                      questions or requests:
+                    </p>
+                    <div className="mt-[10px]">
+                      <a href="mailto:chsdjbhj@example.com">
+                        <span className="text-purple-700 ">
+                          chiedoziegodluck351@gmail.com
+                        </span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
