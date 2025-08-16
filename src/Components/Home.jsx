@@ -10,6 +10,7 @@ import Portfolio from "./Portfolio";
 import Card from "./Card";
 import Fusion from "./Fusion";
 import Security from "./Security";
+import FoundationPage from "./FoundationPage";
 
 const Home = () => {
   const [count, setCount] = useState(0);
@@ -115,6 +116,7 @@ const Home = () => {
         className="bg-cover bg-center   n"
         style={{ backgroundImage: `url(${image})` }}
       >
+        {/* <FoundationPage/> */}
         {/* <Security/> */}
         {/* <Fusion/>
         <Card/> */}
@@ -122,7 +124,7 @@ const Home = () => {
         <Onestopaccess />
         <OptimizeYourTrades />
       </div>
-      <div className="mt-[50px] ">
+       <div className="mt-[50px] ">
         <Logo />
       </div>
       <OneinchProuducts />

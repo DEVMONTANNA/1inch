@@ -8,6 +8,7 @@ import Header from "./Components/Header.jsx";
 import Card from "./Components/Card.jsx";
 import Fusion from "./Components/Fusion.jsx";
 import Security from "./Components/Security.jsx";
+import FoundationPage from "./Components/FoundationPage.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ function App() {
           <Route path="/card" element={<Card />} />
           <Route path="/fusion" element={<Fusion />} />
           <Route path="/security" element={<Security/>}/>
+          <Route path="/foundation" element={<FoundationPage/>}/>
         </Routes>
       </Router>
     </div>

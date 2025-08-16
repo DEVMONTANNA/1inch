@@ -613,7 +613,7 @@ const Header = () => {
                           Partnership & stakeholders
                         </li>
                         <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
-                          Foundation
+                          <Link to="/foundation">Foundation</Link>
                         </li>
                         <li className="mt-[10px] text-[#fff9] hover hover:text-[white]">
                           Press room
