@@ -95,14 +95,17 @@ const Header = () => {
                               src={Swap}
                             />
                           </div>
-                          <div className="ml-[10px] ">
-                            <b>
-                              <p>Swap</p>
-                            </b>
-                            <p className="text-[12.5px] flex items-center">
-                              Swap any token at he best rates
-                            </p>
-                          </div>
+                          <Link to="foundation">
+                            {" "}
+                            <div className="ml-[10px] ">
+                              <b>
+                                <p>Swap</p>
+                              </b>
+                              <p className="text-[12.5px] flex items-center">
+                                Swap any token at he best rates
+                              </p>
+                            </div>
+                          </Link>
                         </div>
                         <div className="  flex  leading-tight  p-[15px] hover:bg-[black] rounded-[25px]">
                           <div>
@@ -127,14 +130,16 @@ const Header = () => {
                               src={Portfolio}
                             />
                           </div>
-                          <div className="ml-[10px]">
-                            <b>
-                              <p>PORTFOLIO</p>
-                            </b>
-                            <p className="text-[13px]">
-                              Track your assets' performance
-                            </p>
-                          </div>
+                          <Link to="portfolio">
+                            <div className="ml-[10px]">
+                              <b>
+                                <p>PORTFOLIO</p>
+                              </b>
+                              <p className="text-[13px]">
+                                Track your assets' performance
+                              </p>
+                            </div>
+                          </Link>
                         </div>
                       </div>
                       <div>
@@ -150,14 +155,16 @@ const Header = () => {
                               src={Hunter}
                             />
                           </div>
-                          <div className="ml-[10px]">
-                            <b>
-                              <p>PORTFOLIO</p>
-                            </b>
-                            <p className="text-[13px]">
-                              Track your assets' performance
-                            </p>
-                          </div>
+                          <Link to="portfolio">
+                            <div className="ml-[10px]">
+                              <b>
+                                <p>PORTFOLIO</p>
+                              </b>
+                              <p className="text-[13px]">
+                                Track your assets' performance
+                              </p>
+                            </div>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -172,14 +179,17 @@ const Header = () => {
                             src={Card}
                           />
                         </div>
-                        <div className="ml-[10px] ">
-                          <b>
-                            <p>CARD</p>
-                          </b>
-                          <p className="text-[13px]">
-                            Pay with crypto anywhere
-                          </p>
-                        </div>
+                        <Link to="card">
+                          {" "}
+                          <div className="ml-[10px] ">
+                            <b>
+                              <p>CARD</p>
+                            </b>
+                            <p className="text-[13px]">
+                              Pay with crypto anywhere
+                            </p>
+                          </div>
+                        </Link>
                       </div>
                     </div>
                     <div className=" w-[40%] p-[15px]">
@@ -326,16 +336,18 @@ const Header = () => {
                             src={Devportal}
                           />
                         </div>
-                        <div className="ml-[10px]  ">
-                          <b>
-                            <p className="flex items-center mt-[5px]">
-                              Developer portal
+                        <Link to="security">
+                          <div className="ml-[10px]  ">
+                            <b>
+                              <p className="flex items-center mt-[5px]">
+                                Developer portal
+                              </p>
+                            </b>
+                            <p className="text-[12.5px] mt-[5px] flex items-center">
+                              Integrate web3 tools that suites your need
                             </p>
-                          </b>
-                          <p className="text-[12.5px] mt-[5px] flex items-center">
-                            Integrate web3 tools that suites your need
-                          </p>
-                        </div>
+                          </div>
+                        </Link>
                       </div>
                       <div></div>
                     </div>

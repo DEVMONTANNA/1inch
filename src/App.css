@@ -1,10 +1,36 @@
 .portfoliosmallscreen {
   display: none;
 }
+.mobileviewmission {
+  display: "none";
+}
 
 @media (max-width: 600px) {
+  .desktopviewmission {
+    display: none;
+  }
+  .mobileviewmission {
+    display: "block";
+    padding: 10px;
+  }
+  .missiondeviceview {
+    display: block;
+  }
+  #mobileview {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .oneinchfoundation {
+    font-size: 20px;
+    padding: 0;
+    width: 100%;
+  }
+  .oneinchfoundationlargetext {
+    font-size: 35px;
+  }
   .portfoliosmallscreen {
-    display:  block !important;
+    display: block !important;
   }
   .portfoliolargescreen {
     display: none;
@@ -97,6 +123,9 @@
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
+  .mobileviewmission {
+    display: "block";
+  }
   .omneinchwallet {
     display: block;
   }
@@ -170,12 +199,22 @@ html {
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
+.dektopview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 body {
   background-color: #0b0b14;
 }
 
+.dektopview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

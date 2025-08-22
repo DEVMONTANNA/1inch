@@ -38,6 +38,10 @@ const Home = () => {
 
   const date = new Date();
   const year = date.getFullYear();
+  
+
+ 
+
   return (
     <>
       {/* <div className=" h-[100vh]">
@@ -114,20 +118,25 @@ const Home = () => {
 
       <div
         className="bg-cover bg-center   n"
-        style={{ backgroundImage: `url(${image})` }}
+        // style={{ backgroundImage: `url(${image})` }}
       >
-        {/* <FoundationPage/> */}
+       
+
+ 
+    
+
+        <FoundationPage/>
         {/* <Security/> */}
         {/* <Fusion/>
         <Card/> */}
-        <Header />
+        {/* <Header />
         <Onestopaccess />
-        <OptimizeYourTrades />
+        <OptimizeYourTrades /> */}
       </div>
-       <div className="mt-[50px] ">
+       {/* <div className="mt-[50px] ">
         <Logo />
-      </div>
-      <OneinchProuducts />
+      </div> */}
+      {/* <OneinchProuducts /> */}
       {/* <Portfolio/> */}
     </>
   );
