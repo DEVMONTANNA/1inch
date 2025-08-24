@@ -118,24 +118,24 @@ const Home = () => {
 
       <div
         className="bg-cover bg-center   n"
-        // style={{ backgroundImage: `url(${image})` }}
+        style={{ backgroundImage: `url(${image})` }}
       >
        
 
  
     
 
-        <FoundationPage/>
+        {/* <FoundationPage/> */}
         {/* <Security/> */}
         {/* <Fusion/>
         <Card/> */}
-        {/* <Header />
+        <Header />
         <Onestopaccess />
-        <OptimizeYourTrades /> */}
+        <OptimizeYourTrades />
       </div>
-       {/* <div className="mt-[50px] ">
-        <Logo />
-      </div> */}
+       <div className="mt-[50px] ">
+        <Logo /> 
+      </div> 
       {/* <OneinchProuducts /> */}
       {/* <Portfolio/> */}
     </>
